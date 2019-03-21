@@ -11,7 +11,7 @@
 # Tenants with special characters in their names are not supported for migration
 
 $TenantsForMigration = @(
-    "24053_PHX_47706"
+    ""
 )
 
 # Name of Scale-Out Backup Repository tenants backups should be migrated to
@@ -19,7 +19,7 @@ $TenantsForMigration = @(
 # Requirements:
 # Extents cannot be in maintenance mode
 
-$ScaleOutRepositoryName = "PHX-VCCPSOBR01"
+$ScaleOutRepositoryName = ""
 
 
 ##################################################################
