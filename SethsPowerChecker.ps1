@@ -103,7 +103,8 @@ $global:BadComputers = @()
 Step-One $global:Computers
 
 Get-DirFreeSize $global:Computers           #This line runs the script. It calls the function Get-DirFreeSize and passes it the parameter Computers.
-
+add-content "results.txt" "Bad computers below, expect errors"
+Get-DirFreeSize $global:BadComputers
 #Disconnect-VBRServer
 #To add more systems to the script, add to files.txt. Invoke-Command can use DNS names or IP adresses to connect to remote devices. I recommend using DNS names. See the below line as to how this should look. For the last entry in the list leave off the comma. 
 #systems.txt example: PHX0-VCCVBR3,PHX0-VCCPVBR04,PHX0-VCCPVBR05,PHX0-VCCPVBR07
