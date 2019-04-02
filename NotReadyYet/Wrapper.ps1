@@ -28,3 +28,4 @@ write-host "Logged into $VEM successfully"
 else{
 write-host "you suck"
 }
+$global:AuthHeader = $AuthXML.Headers['X-RestSvcSessionId'];
