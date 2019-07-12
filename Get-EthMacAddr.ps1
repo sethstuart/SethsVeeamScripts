@@ -1,0 +1,1 @@
+Get-NetAdapter | Where-Object {$_.Name -like "Ethernet*" -and $_.Status -like "Up"} | Select-Object -Property PermanentAddress
